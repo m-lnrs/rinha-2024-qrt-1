@@ -1,0 +1,13 @@
+FROM docker.io/python:3.12-alpine3.19
+
+MAINTAINER matheuslinares@outlook.com
+
+RUN mkdir -p /srv/rinha
+
+COPY . /srv/rinha
+
+WORKDIR /srv/rinha
+
+RUN pip install -r requirements
+
+ENTRYPOINT ["sh", "entrypoint.sh"]
