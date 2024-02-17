@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   api01: &api
-    image: rinha-2024-qrt-1:1.0
+    image: rinha-2024-qrt-1
     build:
       context: ./src
       dockerfile: dockerfile
