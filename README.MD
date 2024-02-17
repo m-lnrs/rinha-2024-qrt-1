@@ -11,4 +11,4 @@ Submissão feita com:
 - `nginx` como load balancer
 - `postgres` como banco de dados
 - `python` para api com as libs `flask`, `psycopg` e `gunicorn`
-- [repositório da api](https://github.com/m-lnrs/rinha-de-backend-2024-q1-api)
+- [repositório da api](https://github.com/m-lnrs/rinha-2024-qrt-1)
