@@ -36,7 +36,7 @@ BEGIN
 	INSERT INTO balance (client_number, amount)
 		SELECT number, 0 FROM client;
 
-	CREATE INDEX idx_transaction_client_number ON transaction (done);
+	CREATE INDEX idx_transaction_client_number ON transaction (done DESC);
 END;
 $$;
 
