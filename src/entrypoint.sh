@@ -12,5 +12,4 @@ WORKERS="${APP_WORKERS:=1}"
 TIMEOUT="${APP_TIMEOUT:=30}"
 
 #--worker-class gevent
-
-exec gunicorn --workers=$WORKERS --threads=$THREADS --timeout $TIMEOUT -b 0.0.0.0:$PORT --chdir . wsgi:app
+exec gunicorn --workers $WORKERS --threads $THREADS --timeout $TIMEOUT -b 0.0.0.0:$PORT wsgi:app
